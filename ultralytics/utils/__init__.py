@@ -612,7 +612,7 @@ def is_jetson() -> bool:
     Returns:
         (bool): True if running on a Jetson Nano or Jetson Orin, False otherwise.
     """
-    return "NVIDIA" in PROC_DEVICE_MODEL  # i.e. "NVIDIA Jetson Nano" or "NVIDIA Orin NX"
+    return "Jetson" in PROC_DEVICE_MODEL  # i.e. "NVIDIA Jetson Nano" or "NVIDIA Orin NX"
 
 
 def is_online() -> bool:
